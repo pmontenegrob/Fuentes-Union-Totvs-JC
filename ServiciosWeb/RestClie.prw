@@ -6,10 +6,10 @@
 #INCLUDE "RESTFUL.CH"
 
 WSRESTFUL CLIENTES DESCRIPTION "Servicio maestro clientes"
-WSDATA RECEIVE As String //Json Recebido
+	WSDATA RECEIVE As String //Json Recebido
 
-WSMETHOD POST 	DESCRIPTION "Cadastra um novo cliente" 		WSSYNTAX "/CLIENTES"
-WSMETHOD GET  	DESCRIPTION "Retorna lista de clientes" 	WSSYNTAX "/CLIENTES"
+	WSMETHOD POST 	DESCRIPTION "Cadastra um novo cliente" 		WSSYNTAX "/CLIENTES"
+	WSMETHOD GET  	DESCRIPTION "Retorna lista de clientes" 	WSSYNTAX "/CLIENTES"
 //WSMETHOD PUT  	DESCRIPTION "Altera cliente" 			WSSYNTAX "/CLIENTES || /CLIENTES/{CGC}"
 
 END WSRESTFUL
@@ -20,7 +20,7 @@ WSMETHOD POST WSRECEIVE RECEIVE WSSERVICE CLIENTES
 
 	Local oParseJSON := Nil
 
-	Local aDadosCli   := {} //–> Array para ExecAuto  MATA030
+	Local aDadosCli   := {} //ï¿½> Array para ExecAuto  MATA030
 
 	Local cFileLog   := ""
 
@@ -38,7 +38,7 @@ WSMETHOD POST WSRECEIVE RECEIVE WSSERVICE CLIENTES
 
 	Private lMsHelpAuto := .F.
 
-	// –> Crea logs
+	// ï¿½> Crea logs
 
 	If !ExistDir("\log_cli")
 
@@ -46,7 +46,7 @@ WSMETHOD POST WSRECEIVE RECEIVE WSSERVICE CLIENTES
 
 	EndIf
 
-	// –> Deserializa a string JSON
+	// ï¿½> Deserializa a string JSON
 
 	FWJsonDeserialize(cJson, @oParseJSON)
 
@@ -82,9 +82,19 @@ WSMETHOD POST WSRECEIVE RECEIVE WSSERVICE CLIENTES
 
 		Aadd(aDadosCli, {"A1_TEL"  , oParseJSON:Client:A1_TEL, Nil} )
 
-		Aadd(aDadosCli, {"A1_CONTA"  , oParseJSON:Client:A1_CONTA, Nil} )
-		
-		Aadd(aDadosCli, {"A1_UCTAANT"  , oParseJSON:Client:A1_UCTAANT, Nil} )
+		/** Cuentan con inicializador estï¿½ndar **/
+		/*Aadd(aDadosCli, {"A1_CONTA"  , oParseJSON:Client:A1_CONTA, Nil} )
+		Aadd(aDadosCli, {"A1_UCTAANT"  , oParseJSON:Client:A1_UCTAANT, Nil} )*/
+
+		Aadd(aDadosCli, {"A1_TIPDOC"  , oParseJSON:Client:A1_TIPDOC, Nil} )
+
+		Aadd(aDadosCli, {"A1_CLDOCID"  , oParseJSON:Client:A1_CLDOCID, Nil} )
+
+		if Type("oParseJSON:Client:A1_EMAIL") <> "U"
+			if(!Empty(TRIM(oParseJSON:Client:A1_EMAIL)))
+				Aadd(aDadosCli, {"A1_EMAIL"  , oParseJSON:Client:A1_EMAIL, Nil} )
+			EndIf
+		EndIf
 
 		MsExecAuto({|x,y| MATA030(x,y)}, aDadosCli, 3)
 
@@ -96,7 +106,7 @@ WSMETHOD POST WSRECEIVE RECEIVE WSSERVICE CLIENTES
 
 			cErro := MostraErro("\log_cli", cArqLog)
 
-			cErro := TrataErro(cErro) // –> Trata error para devolver para o client
+			cErro := TrataErro(cErro) // ï¿½> Trata error para devolver para o client
 
 			SetRestFault(400, cErro)
 
@@ -146,7 +156,9 @@ WSMETHOD GET WSSERVICE CLIENTES
 	::SetContentType("application/json;charset=utf-8")
 
 	BeginSQL Alias cNextAlias
-		SELECT  A1_COD, A1_LOJA, RTRIM(A1_NOME) A1_NOME, A1_END, A1_CGC, A1_EST, A1_TEL,A1_MUN,A1_TABELA,A1_CONTA ,A1_COND ,A1_NREDUZ,RTRIM(A1_UNOMFAC) A1_UNOMFAC
+		SELECT A1_COD, A1_LOJA, RTRIM(A1_NOME) A1_NOME, A1_END, A1_CGC, A1_EST, A1_TEL,A1_MUN,A1_TABELA,
+		A1_CONTA ,A1_COND ,A1_NREDUZ,RTRIM(A1_UNOMFAC) A1_UNOMFAC,
+		A1_TIPDOC, A1_CLDOCID, A1_EMAIL, A1_UNITFAC, A1_ULSTCNT, A1_CONTEFE
 		FROM %table:SA1% SA1
 		WHERE SA1.%notdel% and SA1.A1_MSBLQL not in ('1')
 	EndSQL
@@ -166,11 +178,18 @@ WSMETHOD GET WSSERVICE CLIENTES
 			objClie['A1_EST']			:= (cNextAlias)->A1_EST
 			objClie['A1_TEL']			:= (cNextAlias)->A1_TEL
 			objClie['A1_MUN']			:= (cNextAlias)->A1_MUN
-			objClie['A1_TAB']		:= (cNextAlias)->A1_TABELA
+			objClie['A1_TAB']			:= (cNextAlias)->A1_TABELA
 			objClie['A1_CONTA']			:= (cNextAlias)->A1_CONTA
 			objClie['A1_COND']			:= (cNextAlias)->A1_COND
-			objClie['A1_NREDUZ']			:= (cNextAlias)->A1_NREDUZ
-			objClie['A1_UNOMFAC']			:= Alltrim((cNextAlias)->A1_UNOMFAC)
+			objClie['A1_NREDUZ']		:= (cNextAlias)->A1_NREDUZ
+			objClie['A1_UNOMFAC']		:= Alltrim((cNextAlias)->A1_UNOMFAC)
+			objClie['A1_TIPDOC']		:= (cNextAlias)->A1_TIPDOC
+			objClie['A1_CLDOCID']		:= (cNextAlias)->A1_CLDOCID
+			objClie['A1_EMAIL']			:= (cNextAlias)->A1_EMAIL
+			objClie['A1_UNITFAC']		:= (cNextAlias)->A1_UNITFAC
+			objClie['A1_ULSTCNT']		:= (cNextAlias)->A1_ULSTCNT
+			objClie['A1_CONTEFE']		:= (cNextAlias)->A1_CONTEFE
+			
 		
 			/*
 			oCliente	 := Client():New()
@@ -187,24 +206,24 @@ WSMETHOD GET WSSERVICE CLIENTES
 			oCliente:setCond( AllTrim((cNextAlias)->A1_COND ))
 			oCliente:setNreduz( AllTrim((cNextAlias)->A1_NREDUZ ))
 			*/
-			aadd(aCliente,objClie)
+		aadd(aCliente,objClie)
 
-			(cNextAlias)->( DbSkip() )
+		(cNextAlias)->( DbSkip() )
 
-		EndDo
+	EndDo
 
-		cJson := FWJsonSerialize(aCliente,.T.,.T.)
+	cJson := FWJsonSerialize(aCliente,.T.,.T.)
 //		cJson := FWJsonSerialize(aCliente,.T.,.T.)
 
-		cJson := EncodeUtf8(cJson)
+	cJson := EncodeUtf8(cJson)
 
-		::SetResponse(cJson)
-		(cNextAlias)->( DbCloseArea() )
-	Else
-		SetRestFault(400, "SA1 Empty")
-		lRet := .F.
-	EndIf
-	RestArea(aArea)
+	::SetResponse(cJson)
+	(cNextAlias)->( DbCloseArea() )
+Else
+	SetRestFault(400, "SA1 Empty")
+	lRet := .F.
+EndIf
+RestArea(aArea)
 
 Return(lRet)
 

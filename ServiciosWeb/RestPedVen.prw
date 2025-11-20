@@ -7,26 +7,26 @@
 #Include "TopConn.ch"
 
 /*
-ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
-±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
-±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
-±±³WS     ³ RESTPEDVEN ³ Autor ³ POST Denar Terrazas					  ³±±
-±±      						 GET Erick Etcheverry ³ Data ³ 26/07/2018 ³±±
-±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
-±±³Descri‡…o ³Web service para Ingresar un pedido 						  ³±±
-±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
-±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
-±±³ Uso      ³ TdeP Horeb                                                 ³±±
-±±ÃÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
-±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
-ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½
+ï¿½ï¿½ï¿½WS     ï¿½ RESTPEDVEN ï¿½ Autor ï¿½ POST Denar Terrazas					  ï¿½ï¿½ï¿½
+ï¿½ï¿½      						 GET Erick Etcheverry ï¿½ Data ï¿½ 26/07/2018 ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½
+ï¿½ï¿½ï¿½Descriï¿½ï¿½o ï¿½Web service para Ingresar un pedido 						  ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½
+ï¿½ï¿½ï¿½ Uso      ï¿½ TdeP Horeb                                                 ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 
 WSRESTFUL pedido DESCRIPTION "Obtener historial pedido movil"
-WSDATA CODVEN As String //Json Recebido
+	WSDATA CODVEN As String //Json Recebido
 
-WSMETHOD POST  DESCRIPTION "Inserta producto en base de dados protheus" WSSYNTAX ""
-WSMETHOD GET  	DESCRIPTION "Retorna lista de pedidos realizados en el movil" 	WSSYNTAX ""
+	WSMETHOD POST  DESCRIPTION "Inserta producto en base de dados protheus" WSSYNTAX ""
+	WSMETHOD GET  	DESCRIPTION "Retorna lista de pedidos realizados en el movil" 	WSSYNTAX ""
 //WSMETHOD PUT  	DESCRIPTION "Altera cliente" 			WSSYNTAX "/CLIENTES || /CLIENTES/{CGC}"
 
 END WSRESTFUL
@@ -42,181 +42,215 @@ WSMETHOD POST  WSSERVICE pedido
 	private oObj
 	PRIVATE lMsErroAuto := .F.
 //	begin transaction
-		::SetContentType("application/json;charset=utf-8")
+	::SetContentType("application/json;charset=utf-8")
 
-		//	oJson := JsonObject():New()
-		cBody := DecodeUTF8(Self:GetContent(), "cp1252")
-		FWJsonDeserialize(cBody,@oObj)
-		//	oObj  :=  oJson:FromJson(cBody)
+	//	oJson := JsonObject():New()
+	cBody := DecodeUTF8(Self:GetContent(), "cp1252")
+	FWJsonDeserialize(cBody,@oObj)
+	//	oObj  :=  oJson:FromJson(cBody)
 
 
-		if empty(cBody)
-			cBody := "Sin Valor"
+	if empty(cBody)
+		cBody := "Sin Valor"
+	else
+		if Type("oObj:DDATABASE") <> "U"// caso exista
+			DDATABASE:= CTOD(oObj:DDATABASE)
+		endif
+		if type("oObj:TOKEN") <> "U" // nahim validando si existe TOKEN Pedido de venta
+			if !empty(oObj:TOKEN) // que no sea vacio 16/06/2020
+				DbSelectArea("SC5")
+				SC5->(dBSetOrder(8))
+				IF SC5->(DbSeek(xFilial("SC5")+ Padr(cvaltochar(oObj:TOKEN),TamSX3("C5_UIDAPP")[1]))) // valido si estï¿½ en la base de datos y devuelvo el recibo
+					// mostrnaod r
+					cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,SC5->C5_NUM)
+					//		cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,cDoc)
+					//cJson := EncodeUtf8(cJson)
+					::SetResponse(cJson)
+					return lPost
+				ENDIF
+				DBCLOSEAREA("SC5")
+			endif
+			// validar si existe el id en la SEL
+		endif
+		//	PREPARE ENVIRONMENT EMPRESA "01" FILIAL "01" MODULO "FAT" TABLES "SC5","SC6","SA1","SA2","SB1","SB2","SF4"
+		//PREPARE ENVIRONMENT EMPRESA "01" FILIAL "01"
+
+		cDoc := GetSxeNum("SC5","C5_NUM")
+		RollBAckSx8()
+
+		aCabec := {} // Pedido 0001
+		aItens := {} // Productos Detalle 01 02 03
+
+		aadd(aCabec,{"C5_NUM"   ,cDoc,Nil})
+		aadd(aCabec,{"C5_TIPO" ,"N",Nil})  // siempre es N
+		aadd(aCabec,{"C5_CLIENTE",oObj:C5_CLIENTE,Nil})
+		aadd(aCabec,{"C5_LOJACLI",oObj:C5_LOJACLI,Nil})
+		//		aadd(aCabec,{"C5_LOJAENT",'01',Nil})
+		// caso
+		if Type("oObj:TOKEN") <> "U"// caso exista
+			aadd(aCabec,{"C5_UIDAPP",cvaltochar(oObj:TOKEN),Nil})
+		endif
+		if Type("oObj:C5_CONDPAG") <> "U"// caso exista
+			aadd(aCabec,{"C5_CONDPAG",oObj:C5_CONDPAG,Nil})
+		endif
+		if Type("oObj:C5_UOBSERV") <> "U"// caso exista
+			aadd(aCabec,{"C5_UOBSERV","VM: " + oObj:C5_UOBSERV,Nil})
 		else
-			if type("oObj:TOKEN") <> "U" // nahim validando si existe TOKEN Pedido de venta
-				if !empty(oObj:TOKEN) // que no sea vacio 16/06/2020
-					DbSelectArea("SC5")
-					SC5->(dBSetOrder(8))
-					IF SC5->(DbSeek(xFilial("SC5")+ Padr(cvaltochar(oObj:TOKEN),TamSX3("C5_UIDAPP")[1]))) // valido si está en la base de datos y devuelvo el recibo
-						// mostrnaod r
-						cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,SC5->C5_NUM)
-						//		cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,cDoc)
-						//cJson := EncodeUtf8(cJson)
-						::SetResponse(cJson)
-						return lPost
-					ENDIF
-					DBCLOSEAREA("SC5")
-				endif
-				// validar si existe el id en la SEL
-			endif
-			//	PREPARE ENVIRONMENT EMPRESA "01" FILIAL "01" MODULO "FAT" TABLES "SC5","SC6","SA1","SA2","SB1","SB2","SF4"
-			//PREPARE ENVIRONMENT EMPRESA "01" FILIAL "01"
+			aadd(aCabec,{"C5_UOBSERV","Venta Mï¿½vil",Nil})
+		endif
+		if Type("oObj:DDATABASE") <> "U"// caso exista
+			aadd(aCabec,{"C5_EMISSAO",CTOD(oObj:DDATABASE),Nil})
+		endif
+		IF oObj:C5_MOEDA <> Nil
+			aadd(aCabec,{"C5_MOEDA",oObj:C5_MOEDA,Nil})
+			//aadd(aCabec,{"C5_MOEDTIT",oObj:C5_MOEDA,Nil})
+		endif
 
-			cDoc := GetSxeNum("SC5","C5_NUM")
-			RollBAckSx8()
+		/**
+		* DT 17/06/2022
+		* Union solicita que la moneda para el tï¿½tulo sea siempre en Dï¿½lares
+		**/
+		aadd(aCabec,{"C5_MOEDTIT",2,Nil})
+		/***************/
 
-			aCabec := {} // Pedido 0001
-			aItens := {} // Productos Detalle 01 02 03
+		aUSR := bscCodVen(oObj:USRCOD)
+		//		if aUSR[3]
+		if  Type("aUSR[3]") <> "U" //aUSR[1]
+			aadd(aCabec,{"C5_VEND1",aUSR[1],Nil})
+		ENDIF
+		//		oObj:USRCOD validar si existe C5_VEND1 adicionar vendedor validar si es que hay
+		//
+		if Type("oObj:C5_UNITCLI") <> "U"// caso exista
+			aadd(aCabec,{"C5_UNITCLI",oObj:C5_UNITCLI,Nil})
+		endif
+		if Type("oObj:C5_UNOMCLI") <> "U"// caso exista
+			aadd(aCabec,{"C5_UNOMCLI",oObj:C5_UNOMCLI,Nil})
+		endif
+		if Type("oObj:C5_UTIPOEN") <> "U"// en caso tenga tipo de entrega se incluye Nahim 07/06/2020 Especifico Uniï¿½n Agronegocios.
+			aadd(aCabec,{"C5_UTIPOEN",cvaltochar(oObj:C5_UTIPOEN),Nil})
+		endif
 
-			aadd(aCabec,{"C5_NUM"   ,cDoc,Nil})
-			aadd(aCabec,{"C5_TIPO" ,"N",Nil})  // siempre es N
-			aadd(aCabec,{"C5_CLIENTE",oObj:C5_CLIENTE,Nil})
-			aadd(aCabec,{"C5_LOJACLI",oObj:C5_LOJACLI,Nil})
-			//		aadd(aCabec,{"C5_LOJAENT",'01',Nil})
-			// caso
-			if Type("oObj:TOKEN") <> "U"// caso exista
-				aadd(aCabec,{"C5_UIDAPP",cvaltochar(oObj:TOKEN),Nil})
+		if Type("oObj:C5_CODMPAG") <> "U"//Facturaciï¿½n electrï¿½nica - Cï¿½digo del Mï¿½todo de Pago
+			aadd(aCabec,{"C5_CODMPAG",cvaltochar(oObj:C5_CODMPAG),Nil})
+		endif
+
+		if Type("oObj:C5_XCLDOCI") <> "U"//Facturaciï¿½n electrï¿½nica - Complemento de Documento de Identidad
+			aadd(aCabec,{"C5_XCLDOCI",cvaltochar(oObj:C5_XCLDOCI),Nil})
+		endif
+
+		if Type("oObj:C5_XTIPDOC") <> "U"//Facturaciï¿½n electrï¿½nica - Tipo Documento de Identidad
+			aadd(aCabec,{"C5_XTIPDOC",cvaltochar(oObj:C5_XTIPDOC),Nil})
+		endif
+
+		if Type("oObj:C5_XEMAIL") <> "U"//Facturaciï¿½n electrï¿½nica - Email
+			aadd(aCabec,{"C5_XEMAIL",cvaltochar(oObj:C5_XEMAIL),Nil})
+		endif
+
+		if Type("oObj:C5_NUMTARG") <> "U"//Facturaciï¿½n electrï¿½nica - Nï¿½mero Tarjeta
+			aadd(aCabec,{"C5_NUMTARG",cvaltochar(oObj:C5_NUMTARG),Nil})
+		endif
+
+		nCanPro := len(oObj:productos)
+		For nX := 1 To nCanPro // este for deberia ser por cada producto
+			aLinha := {}
+			cProduto:= oObj:productos[nX]:C6_PRODUTO
+			//			cTes:= Posicione("SB1",1,xFilial("SB1")+ cProduto,"B1_TS")
+			//			cTes:= IIF(!EMPTY(ALLTRIM(cTes)), cTes, "501")
+
+			aadd(aLinha,{"C6_ITEM",StrZero(nX,2),Nil}) // se define los items (este es correlativo)
+			aadd(aLinha,{"C6_PRODUTO",cProduto,Nil}) // codigo del producto WS
+			aadd(aLinha,{"C6_QTDVEN",oObj:productos[nX]:C6_QTDVEN,Nil}) // Cantidad obtenida por cada Pedido WS
+			aadd(aLinha,{"C6_QTDLIB",oObj:productos[nX]:C6_QTDVEN,Nil}) // Cantidad obtenida por cada Pedido WS
+			if Type("oObj:productos[nX]:C6_PRCONTA") <> "U"// caso exista
+				aadd(aLinha,{"C6_PRCONTA",oObj:productos[nX]:C6_PRCONTA,Nil})
 			endif
-			if Type("oObj:C5_CONDPAG") <> "U"// caso exista
-				aadd(aCabec,{"C5_CONDPAG",oObj:C5_CONDPAG,Nil})
-			endif
-			if Type("oObj:C5_UOBSERV") <> "U"// caso exista
-				aadd(aCabec,{"C5_UOBSERV","VM: " + oObj:C5_UOBSERV,Nil})
+
+
+			if oObj:productos[nX]:B1_PRV1== 0 // caso el precio sea 0
+				aadd(aLinha,{"C6_PRUNIT",0.01,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 12/03/2020
+				aadd(aLinha,{"C6_PRCVEN",0.01,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 12/03/2020
 			else
-				aadd(aCabec,{"C5_UOBSERV","Venta Móvil",Nil})
+				if Type("oObj:online") == "U"  // Verifica si es online
+					aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
+					aadd(aLinha,{"C6_PRCVEN",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
+				else // caso exista la variable
+					if oObj:online <> '2' // 2 es online y el precio lo define la App
+						aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
+						aadd(aLinha,{"C6_PRCVEN",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
+					endif
+				endif
 			endif
-			if Type("oObj:DDATABASE") <> "U"// caso exista
-				aadd(aCabec,{"C5_EMISSAO",CTOD(oObj:DDATABASE),Nil})
-			endif
-			IF oObj:C5_MOEDA <> Nil
-				aadd(aCabec,{"C5_MOEDA",oObj:C5_MOEDA,Nil})  // define la condicion de pago WS
-				aadd(aCabec,{"C5_MOEDTIT",oObj:C5_MOEDA,Nil})  // define la condicion de pago WS
-			endif
-			aUSR := bscCodVen(oObj:USRCOD)
-			//		if aUSR[3]
-			if  Type("aUSR[3]") <> "U" //aUSR[1]
-				aadd(aCabec,{"C5_VEND1",aUSR[1],Nil})
-			ENDIF
-			//		oObj:USRCOD validar si existe C5_VEND1 adicionar vendedor validar si es que hay
-			//
-			if Type("oObj:C5_UNITCLI") <> "U"// caso exista
-				aadd(aCabec,{"C5_UNITCLI",oObj:C5_UNITCLI,Nil})
-			endif
-			if Type("oObj:C5_UNOMCLI") <> "U"// caso exista
-				aadd(aCabec,{"C5_UNOMCLI",oObj:C5_UNOMCLI,Nil})
-			endif
-			if Type("oObj:C5_UTIPOEN") <> "U"// en caso tenga tipo de entrega se incluye Nahim 07/06/2020 Especifico Unión Agronegocios.
-				aadd(aCabec,{"C5_UTIPOEN",cvaltochar(oObj:C5_UTIPOEN),Nil})
-			endif
-
-			nCanPro := len(oObj:productos)
-			For nX := 1 To nCanPro // este for deberia ser por cada producto
-				aLinha := {}
-				cProduto:= oObj:productos[nX]:C6_PRODUTO
-				//			cTes:= Posicione("SB1",1,xFilial("SB1")+ cProduto,"B1_TS")
-				//			cTes:= IIF(!EMPTY(ALLTRIM(cTes)), cTes, "501")
-
-				aadd(aLinha,{"C6_ITEM",StrZero(nX,2),Nil}) // se define los items (este es correlativo)
-				aadd(aLinha,{"C6_PRODUTO",cProduto,Nil}) // codigo del producto WS
-				aadd(aLinha,{"C6_QTDVEN",oObj:productos[nX]:C6_QTDVEN,Nil}) // Cantidad obtenida por cada Pedido WS
-				aadd(aLinha,{"C6_QTDLIB",oObj:productos[nX]:C6_QTDVEN,Nil}) // Cantidad obtenida por cada Pedido WS
-				
-
-				if oObj:productos[nX]:B1_PRV1== 0 // caso el precio sea 0
-						aadd(aLinha,{"C6_PRUNIT",0.01,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 12/03/2020
-						aadd(aLinha,{"C6_PRCVEN",0.01,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 12/03/2020					
-				else
-						if Type("oObj:online") == "U"  // Verifica si es online
-							aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
-							aadd(aLinha,{"C6_PRCVEN",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
-						else // caso exista la variable
-							if oObj:online <> '2' // 2 es online y el precio lo define la App
-								aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
-								aadd(aLinha,{"C6_PRCVEN",oObj:productos[nX]:B1_PRV1,Nil}) // precio venta en un comienzo NAHIM COMENTANDO 14/09/2020
-							endif
-						endif
-				endif 
-				if Type("oObj:productos[nX]:C6_LOCAL") <> "U"// caso exista
-					if nX == 1 // caso sea el primero debe colocar el local.
-						aadd(aCabec,{"C5_ULOCAL",oObj:productos[nX]:C6_LOCAL,Nil}) // adicionando local
-						// caso sea el almacén 2 debería
-						If oObj:productos[nX]:C6_LOCAL $ GETMV("MV_XALMPVR")
+			if Type("oObj:productos[nX]:C6_LOCAL") <> "U"// caso exista
+				if nX == 1 // caso sea el primero debe colocar el local.
+					aadd(aCabec,{"C5_ULOCAL",oObj:productos[nX]:C6_LOCAL,Nil}) // adicionando local
+					// caso sea el almacï¿½n 2 deberï¿½a
+					If oObj:productos[nX]:C6_LOCAL $ GETMV("MV_XALMPVR")
 //						if xfilial("SC5") == '0105' .and. (oObj:productos[nX]:C6_LOCAL == '02' .or. oObj:productos[nX]:C6_LOCAL == '06') // caso sea santa cruz y el local es el 2
-							aadd(aCabec,{"C5_DOCGER",'2',Nil}) // adicionando local
+						aadd(aCabec,{"C5_DOCGER",'2',Nil}) // adicionando local
 //						elseif xfilial("SC5") <> '0105'  .and. oObj:productos[nX]:C6_LOCAL == '01'  // caso no sea santa cruz y sea tienda 2
 //							aadd(aCabec,{"C5_DOCGER",'2',Nil}) // adicionando local
-						endif
 					endif
-					//					aadd(aLinha,{"C6_LOCAL",oObj:productos[nX]:C6_LOCAL,Nil})
 				endif
-				//			aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio WS NAHIM COMENTANDO 12/03/2020
-				//			aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil})  // precio WS
-				// 			aadd(aLinha,{"C6_VALOR",oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN,Nil})  // precio WS
-				//			aadd(aLinha,{"C6_TES",cTes,Nil}) // Tipo de entrada Salida
-				if Type("oObj:productos[nX]:C6_DESCONT") <> "U"// caso exista
-						aadd(aLinha,{"C6_DESCONT",oObj:productos[nX]:C6_DESCONT,Nil}) // porcentaje de descuento
-				endif
-				if Type("oObj:productos[nX]:C6_VALDESC") <> "U"// caso exista
-					IF oObj:productos[nX]:C6_VALDESC >= (oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN)
-						conout((oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN) - 0.01)
-						aadd(aLinha,{"C6_VALDESC",(oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN) - 0.01,Nil}) // porcentaje de descuento
-					ELSE
-						aadd(aLinha,{"C6_VALDESC",oObj:productos[nX]:C6_VALDESC,Nil}) // porcentaje de descuento
-					ENDIF
-				endif
- 
-				// Justificación de descuento C6_UTPLIQ
-				if Type("oObj:productos[nX]:C6_UTPLIQ") <> "U"// caso exista
-					aadd(aLinha,{"C6_UTPLIQ",oObj:productos[nX]:C6_UTPLIQ,Nil}) // justificación de descuento por linea. Nahim 07/06/2020
-				endif
+				//					aadd(aLinha,{"C6_LOCAL",oObj:productos[nX]:C6_LOCAL,Nil})
+			endif
+			//			aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil}) // precio WS NAHIM COMENTANDO 12/03/2020
+			//			aadd(aLinha,{"C6_PRUNIT",oObj:productos[nX]:B1_PRV1,Nil})  // precio WS
+			// 			aadd(aLinha,{"C6_VALOR",oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN,Nil})  // precio WS
+			//			aadd(aLinha,{"C6_TES",cTes,Nil}) // Tipo de entrada Salida
+			if Type("oObj:productos[nX]:C6_DESCONT") <> "U"// caso exista
+				aadd(aLinha,{"C6_DESCONT",oObj:productos[nX]:C6_DESCONT,Nil}) // porcentaje de descuento
+			endif
+			if Type("oObj:productos[nX]:C6_VALDESC") <> "U"// caso exista
+				IF oObj:productos[nX]:C6_VALDESC >= (oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN)
+					conout((oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN) - 0.01)
+					aadd(aLinha,{"C6_VALDESC",(oObj:productos[nX]:B1_PRV1 * oObj:productos[nX]:C6_QTDVEN) - 0.01,Nil}) // porcentaje de descuento
+				ELSE
+					aadd(aLinha,{"C6_VALDESC",oObj:productos[nX]:C6_VALDESC,Nil}) // porcentaje de descuento
+				ENDIF
+			endif
 
-				//			if(oObj:productos[nX]:C6_DESCONT > 0)
-				//			else
-				//				aadd(aLinha,{"C6_VALDESC",oObj:productos[nX]:C6_VALDESC,Nil}) // valor de descuento
-				aadd(aLinha,{"C6_VDOBS",oObj:productos[nX]:C6_VDOBS,Nil}) // obs descuento
-				aadd(aItens,aLinha)
-			Next nX
+			// Justificaciï¿½n de descuento C6_UTPLIQ
+			if Type("oObj:productos[nX]:C6_UTPLIQ") <> "U"// caso exista
+				aadd(aLinha,{"C6_UTPLIQ",oObj:productos[nX]:C6_UTPLIQ,Nil}) // justificaciï¿½n de descuento por linea. Nahim 07/06/2020
+			endif
 
-			MSExecAuto({|a, b, c, d| MATA410(a, b, c, d)}, aCabec, aItens, 3, .F.)
-			//		MATA410(aCabec,aItens,3) // funcion Importante
+			//			if(oObj:productos[nX]:C6_DESCONT > 0)
+			//			else
+			//				aadd(aLinha,{"C6_VALDESC",oObj:productos[nX]:C6_VALDESC,Nil}) // valor de descuento
+			aadd(aLinha,{"C6_VDOBS",oObj:productos[nX]:C6_VDOBS,Nil}) // obs descuento
+			aadd(aItens,aLinha)
+		Next nX
 
-			If !lMsErroAuto
-				ConOut("Incluido com sucesso! " + cDoc)
-				//MostraErro()
-				lAcepto := .T.
-			Else
-				ConOut("Erro na inclusao!")
-				cMessage := MostraErro("/temp","error.log")
-				//			ConOut(MostraErro())
-			EndIf
-		endif
+		MSExecAuto({|a, b, c, d| MATA410(a, b, c, d)}, aCabec, aItens, 3, .F.)
+		//		MATA410(aCabec,aItens,3) // funcion Importante
 
-		//lAcepto := insertPed(cBody)
-		if lAcepto
-			// nahim probando 26/08/2019
-			cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,SC5->C5_NUM)
-			//		cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,cDoc)
-			//cJson := EncodeUtf8(cJson)
-			::SetResponse(cJson)
-		else
-			cMessage := StrTran( cMessage, Chr (13) , "\n" )
-			cMessage := StrTran( cMessage, Chr (10) , "" )
-			::SetResponse('{"Status":"Fail","message":"' + cMessage +'"}')
-		endif
+		If !lMsErroAuto
+			ConOut("Incluido com sucesso! " + cDoc)
+			//MostraErro()
+			lAcepto := .T.
+		Else
+			ConOut("Erro na inclusao!")
+			cMessage := MostraErro("/temp","error.log")
+			//			ConOut(MostraErro())
+		EndIf
+	endif
+
+	//lAcepto := insertPed(cBody)
+	if lAcepto
+		// nahim probando 26/08/2019
+		cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,SC5->C5_NUM)
+		//		cJson := u_pedidobyid(oObj:C5_CLIENTE,oObj:C5_LOJACLI,cDoc)
+		//cJson := EncodeUtf8(cJson)
+		::SetResponse(cJson)
+	else
+		cMessage := StrTran( cMessage, Chr (13) , "\n" )
+		cMessage := StrTran( cMessage, Chr (10) , "" )
+		::SetResponse('{"Status":"Fail","message":"' + cMessage +'"}')
+	endif
 //	END transaction
-	Return lPost
+Return lPost
 
-	WSMETHOD GET WSRECEIVE CODVEN WSSERVICE pedido // recibir por QueryString si hay codigo de usuario para filtrar
+WSMETHOD GET WSRECEIVE CODVEN WSSERVICE pedido // recibir por QueryString si hay codigo de usuario para filtrar
 	Local aArea 	 := GetArea()
 	Local cNextAlias := GetNextAlias()
 	Local oPedido
@@ -237,6 +271,7 @@ WSMETHOD POST  WSSERVICE pedido
 		BeginSQL Alias cNextAlias
 			SELECT DISTINCT top 3000 C5_FILIAL,C5_NUM,C5_CLIENTE,C5_EMISSAO,C5_CONDPAG,C5_UNOMCLI,C5_LOJACLI,F2_EMISSAO,C5_DOCGER,
 			C5_UTIPOEN,C5_UIDAPP,
+			C5_CODMPAG, C5_XCLDOCI, C5_XTIPDOC, C5_XEMAIL, C5_NUMTARG, F2_NUMAUT,
 			CASE
 			WHEN C5_INCISS = 'n' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#f059e5'
 			WHEN C5_NOTA <> 'REMITO' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#9ce564'
@@ -260,7 +295,7 @@ WSMETHOD POST  WSSERVICE pedido
 	(( C9_BLEST <> '  ' AND C9_BLEST <> '10' AND  C9_BLEST <> 'ZZ')
 	OR  ( C9_BLCRED <> '  ' AND C9_BLCRED <> '09' AND C9_BLCRED <> '10' AND C9_BLCRED <> 'ZZ' ))
 	AND SC92.C9_PEDIDO = SC9.C9_PEDIDO AND SC92.C9_FILIAL = SC9.C9_FILIAL AND SC92.D_E_L_E_T_!='*' ) COLOR,
-	C5_UNITCLI,C5_USRREG,C5_VEND1,A3_NOME,C6_ENTREG,C6_ITEM,C6_PRODUTO,C6_LOCAL, C6_FILIAL,C6_DESCONT,C6_TES,C6_VALDESC,C6_PRCVEN,C5_UOBSERV
+	C5_UNITCLI,C5_USRREG,C5_VEND1,A3_NOME,C6_ENTREG,C6_ITEM,C6_PRODUTO,C6_LOCAL, C6_FILIAL,C6_DESCONT,C6_TES,C6_VALDESC,C6_PRCVEN,C6_PRCONTA,C5_UOBSERV
 	,C6_UM, C6_QTDVEN,C6_PRUNIT,C6_VALOR, C6_LOTECTL,B1_DESC C6_UESPECI,C5_SERIE,C5_NOTA,
 	C6_UTPLIQ,
 	C5_TXMOEDA,C5_MOEDA,E4_DESCRI,B1_DESC ,(SELECT (DSCTO/TOTAL) * 100.00 PDESC
@@ -283,12 +318,13 @@ WSMETHOD POST  WSSERVICE pedido
 	WHERE UPPER(C5_USRREG) LIKE %exp:upper(CUSERNAME)% AND SC5.D_E_L_E_T_!='*'
 	AND C5_FILIAL = %exp:xFilial('SC5')%
 	ORDER BY 1,2 DESC
-	EndSQL
-	//		ENDIF
+		EndSQL
+		//		ENDIF
 	ELSE
 		BeginSQL Alias cNextAlias
 			SELECT DISTINCT top 3000 C5_FILIAL,C5_NUM,C5_CLIENTE,C5_EMISSAO,C5_CONDPAG,C5_UNOMCLI,C5_LOJACLI,F2_EMISSAO,C5_DOCGER,
 			C5_UTIPOEN,C5_UIDAPP,
+			C5_CODMPAG, C5_XCLDOCI, C5_XTIPDOC, C5_XEMAIL, C5_NUMTARG, F2_NUMAUT,
 			CASE
 			WHEN C5_INCISS = 'n' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#f059e5'
 			WHEN C5_NOTA <> 'REMITO' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#9ce564'
@@ -313,7 +349,7 @@ WSMETHOD POST  WSSERVICE pedido
 	OR  ( C9_BLCRED <> '  ' AND C9_BLCRED <> '09' AND C9_BLCRED <> '10' AND C9_BLCRED <> 'ZZ' ))
 	AND SC92.C9_PEDIDO = SC9.C9_PEDIDO AND SC92.C9_FILIAL = SC9.C9_FILIAL AND SC92.D_E_L_E_T_!='*' ) COLOR,
 
-	C5_UNITCLI,C5_USRREG,C5_VEND1,A3_NOME,C6_ENTREG,C6_ITEM,C6_PRODUTO,C6_LOCAL, C6_FILIAL, C6_DESCONT,C6_VALDESC,C6_PRCVEN,C5_UOBSERV
+	C5_UNITCLI,C5_USRREG,C5_VEND1,A3_NOME,C6_ENTREG,C6_ITEM,C6_PRODUTO,C6_LOCAL, C6_FILIAL, C6_DESCONT,C6_VALDESC,C6_PRCVEN,C6_PRCONTA,C5_UOBSERV
 	,C6_TES,C6_UM, C6_QTDVEN,C6_PRUNIT,C6_VALOR, C6_LOTECTL,B1_DESC C6_UESPECI,C5_SERIE,C5_NOTA,
 	C6_UTPLIQ,
 	C5_TXMOEDA,C5_MOEDA,E4_DESCRI,B1_DESC ,(SELECT (DSCTO/TOTAL) * 100.00 PDESC
@@ -334,7 +370,7 @@ WSMETHOD POST  WSSERVICE pedido
 	WHERE SC5.D_E_L_E_T_ LIKE ''
 	AND C5_FILIAL = %exp:xFilial('SC5')%
 	ORDER BY 1,2 DESC
-	EndSQL
+		EndSQL
 	endif
 	DbSelectArea(cNextAlias) // seleccionar area Area
 
@@ -351,22 +387,31 @@ WSMETHOD POST  WSSERVICE pedido
 			IF alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)
 				oPedido := JsonObject():new()
 				//alert("Entro")
-				oPedido['C5_NUM']		:=     (cNextAlias)->C5_NUM
-				oPedido['C5_USRREG']	:=     (cNextAlias)->C5_USRREG
-				oPedido['C5_CLIENTE']	:=     (cNextAlias)->C5_CLIENTE
-				oPedido['C5_CONDPAG']	:=     (cNextAlias)->C5_CONDPAG
-				oPedido['C5_UTIPOEN']	:=     (cNextAlias)->C5_UTIPOEN // tipo de entrega Nahim 07/06/2020
-				oPedido['C5_EMISSAO']	:=     (cNextAlias)->C5_EMISSAO
-				oPedido['C5_FILIAL']		:= (cNextAlias)->C5_FILIAL
-				oPedido['C5_LOJACLI']	:=     (cNextAlias)->C5_LOJACLI
-				oPedido['C5_MOEDA']		:=     (cNextAlias)->C5_MOEDA
-				oPedido['C5_NOTA']		:=     (cNextAlias)->C5_NOTA
-				oPedido['C5_SERIE']		:=     (cNextAlias)->C5_SERIE
-				oPedido['C5_UNITCLI']	:=     (cNextAlias)->C5_UNITCLI
-				oPedido['C5_UOBSERV']	:=     (cNextAlias)->C5_UOBSERV // agregando observación Nahim 04/02/2020
-				oPedido['C5_DOCGER']	:=     (cNextAlias)->C5_DOCGER // agregando documento a generar 14/04/2020
-				oPedido['C5_UNOMCLI']	:=     ALLTRIM((cNextAlias)->C5_UNOMCLI)
-				oPedido['token']		:=     (cNextAlias)->C5_UIDAPP // id App móvil (TOKEN)
+				oPedido['C5_NUM']		:= (cNextAlias)->C5_NUM
+				oPedido['C5_USRREG']	:= (cNextAlias)->C5_USRREG
+				oPedido['C5_CLIENTE']	:= (cNextAlias)->C5_CLIENTE
+				oPedido['C5_CONDPAG']	:= (cNextAlias)->C5_CONDPAG
+				oPedido['C5_UTIPOEN']	:= (cNextAlias)->C5_UTIPOEN // tipo de entrega Nahim 07/06/2020
+				oPedido['C5_EMISSAO']	:= (cNextAlias)->C5_EMISSAO
+				oPedido['C5_FILIAL']	:= (cNextAlias)->C5_FILIAL
+				oPedido['C5_LOJACLI']	:= (cNextAlias)->C5_LOJACLI
+				oPedido['C5_MOEDA']		:= (cNextAlias)->C5_MOEDA
+				oPedido['C5_NOTA']		:= (cNextAlias)->C5_NOTA
+				oPedido['C5_SERIE']		:= (cNextAlias)->C5_SERIE
+				oPedido['C5_UNITCLI']	:= (cNextAlias)->C5_UNITCLI
+				oPedido['C5_UOBSERV']	:= (cNextAlias)->C5_UOBSERV // agregando observaciï¿½n Nahim 04/02/2020
+				oPedido['C5_DOCGER']	:= (cNextAlias)->C5_DOCGER // agregando documento a generar 14/04/2020
+				oPedido['C5_UNOMCLI']	:= ALLTRIM((cNextAlias)->C5_UNOMCLI)
+				oPedido['token']		:= (cNextAlias)->C5_UIDAPP // id App mï¿½vil (TOKEN)
+
+				//Electronic Invoice
+				oPedido['C5_CODMPAG']	:= ALLTRIM((cNextAlias)->C5_CODMPAG)
+				oPedido['C5_XCLDOCI']	:= ALLTRIM((cNextAlias)->C5_XCLDOCI)
+				oPedido['C5_XTIPDOC']	:= ALLTRIM((cNextAlias)->C5_XTIPDOC)
+				oPedido['C5_XEMAIL']	:= ALLTRIM((cNextAlias)->C5_XEMAIL)
+				oPedido['C5_NUMTARG']	:= ALLTRIM((cNextAlias)->C5_NUMTARG)
+				oPedido['F2_NUMAUT']	:= TRIM((cNextAlias)->F2_NUMAUT)
+
 				if !empty(cCodUsr)
 					oPedido['C5_VEND1']	:=         cCodUsr
 				else
@@ -377,7 +422,7 @@ WSMETHOD POST  WSSERVICE pedido
 				oPedido['F2_EMISSAO']	:=     (cNextAlias)->F2_EMISSAO
 				oPedido['A3_NOME']	:=     ALLTRIM((cNextAlias)->A3_NOME)
 				if !empty((cNextAlias)->COLOR) // caso que tenga color
-					if (alltrim((cNextAlias)->C5_COLOR)) == '#ebeb5f' // sólo si es amarillo
+					if (alltrim((cNextAlias)->C5_COLOR)) == '#ebeb5f' // sï¿½lo si es amarillo
 						oPedido['C5_COLOR']   := alltrim((cNextAlias)->COLOR)
 					else
 						oPedido['C5_COLOR']   := alltrim((cNextAlias)->C5_COLOR)
@@ -402,24 +447,25 @@ WSMETHOD POST  WSSERVICE pedido
 				oPedido:SetVend((cNextAlias)->C5_VEND1 )
 				oPedido:SetLojacli((cNextAlias)->C5_LOJACLI )
 				*/
-			ENDIF
-			objProducto := JsonObject():new()
-			objProducto['B1_COD']	   := (cNextAlias)->C6_PRODUTO
-			objProducto['B1_DESC'] 	   := (cNextAlias)->B1_DESC
-			objProducto['B1_PRV1']     := (cNextAlias)->C6_PRUNIT
-			objProducto['C6_PRCVEN']     := (cNextAlias)->C6_PRCVEN // PRECIO DE VENTA SIN DESCUENTO
-			objProducto['B1_UM']      := (cNextAlias)->C6_UM
-			//			objProducto['C6_DESCONT']  := (cNextAlias)->C6_DESCONT
-			objProducto['C6_DESCONT']  := (cNextAlias)->C6_VALDESC // Nahim cambiando por valdescont
-			objProducto['C6_FILIAL']   := (cNextAlias)->C6_FILIAL
-			objProducto['C6_ITEM']     := (cNextAlias)->C6_ITEM
-			objProducto['C6_LOCAL']    := (cNextAlias)->C6_LOCAL
-			objProducto['C6_QTDVEN']   := (cNextAlias)->C6_QTDVEN
-			objProducto['C6_TES']   := (cNextAlias)->C6_TES
-			objProducto['C6_UTPLIQ']	:= (cNextAlias)->C6_UTPLIQ// descuento justificación Nahim 07/06/2020
-			objProducto['PEDVEN']   := alltrim((cNextAlias)->C5_NUM)
+	ENDIF
+	objProducto := JsonObject():new()
+	objProducto['B1_COD']	   := (cNextAlias)->C6_PRODUTO
+	objProducto['B1_DESC'] 	   := (cNextAlias)->B1_DESC
+	objProducto['B1_PRV1']     := (cNextAlias)->C6_PRUNIT
+	objProducto['C6_PRCVEN']     := (cNextAlias)->C6_PRCVEN // PRECIO DE VENTA SIN DESCUENTO
+	objProducto['C6_PRCONTA']     := (cNextAlias)->C6_PRCONTA
+	objProducto['B1_UM']      := (cNextAlias)->C6_UM
+	objProducto['C6_DESCONT']  := (cNextAlias)->C6_DESCONT
+	objProducto['C6_VALDESC']  := (cNextAlias)->C6_VALDESC
+	objProducto['C6_FILIAL']   := (cNextAlias)->C6_FILIAL
+	objProducto['C6_ITEM']     := (cNextAlias)->C6_ITEM
+	objProducto['C6_LOCAL']    := (cNextAlias)->C6_LOCAL
+	objProducto['C6_QTDVEN']   := (cNextAlias)->C6_QTDVEN
+	objProducto['C6_TES']   := (cNextAlias)->C6_TES
+	objProducto['C6_UTPLIQ']	:= (cNextAlias)->C6_UTPLIQ// descuento justificaciï¿½n Nahim 07/06/2020
+	objProducto['PEDVEN']   := alltrim((cNextAlias)->C5_NUM)
 
-			//			objProducto['C6_VDOBS']    := (cNextAlias)->C6_VDOBS)
+	//			objProducto['C6_VDOBS']    := (cNextAlias)->C6_VDOBS)
 
 			/*
 			objProducto := ProductoItem():new()
@@ -439,7 +485,7 @@ WSMETHOD POST  WSSERVICE pedido
 
 			(cNextAlias)->( DbSkip() )
 
-			IF (alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)) .or. (cNextAlias)->(Eof()) // caso esté cambiando de pedido vamos a v
+			IF (alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)) .or. (cNextAlias)->(Eof()) // caso estï¿½ cambiando de pedido vamos a v
 				oPedido['APROD'] := aProds
 				aProds := {}
 				aadd(aPedidos,oPedido)
@@ -486,6 +532,7 @@ user function pedidoById(cClient,cLojaCLi,cNumPed)
 	BeginSQL Alias cNextAlias
 		SELECT DISTINCT C5_FILIAL,C5_NUM,C5_CLIENTE,C5_EMISSAO,C5_LOJACLI,C5_CONDPAG,C5_UNOMCLI,C5_SERIE,C5_NOTA,C5_DOCGER,
 		C5_UTIPOEN,
+		C5_CODMPAG, C5_XCLDOCI, C5_XTIPDOC, C5_XEMAIL, C5_NUMTARG,
 		CASE
 		WHEN C5_INCISS = 'n' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#f059e5'
 		WHEN C5_NOTA <> 'REMITO' AND C5_LIBEROK = '' AND C5_NOTA = '' AND C5_BLQ = '' THEN '#9ce564'
@@ -511,7 +558,7 @@ user function pedidoById(cClient,cLojaCLi,cNumPed)
 	AND SC92.C9_PEDIDO = SC9.C9_PEDIDO AND SC92.C9_FILIAL = SC9.C9_FILIAL AND SC92.D_E_L_E_T_!='*' ) COLOR,
 
 	C5_UNITCLI,C5_USRREG,C5_VEND1,A3_NOME,C6_ENTREG,C6_ITEM,C6_PRODUTO,C6_LOCAL, C6_FILIAL, C6_DESCONT,C5_UOBSERV,
-	C6_UTPLIQ,C6_UM, C6_QTDVEN,C6_PRUNIT,C6_VALOR, C6_LOTECTL,B1_DESC C6_UESPECI,C6_VALDESC,C6_PRCVEN,
+	C6_UTPLIQ,C6_UM, C6_QTDVEN,C6_PRUNIT,C6_VALOR, C6_LOTECTL,B1_DESC C6_UESPECI,C6_VALDESC,C6_PRCVEN,C6_PRCONTA,
 	C6_TES,C5_TXMOEDA,C5_MOEDA,E4_DESCRI,B1_DESC ,(SELECT (DSCTO/TOTAL) * 100.00 PDESC
 	FROM (SELECT SUM(C6_VALOR) + SUM(C6_VALDESC) TOTAL, SUM(C6_VALDESC) DSCTO
 	FROM %Table:SC6% SC61
@@ -547,29 +594,37 @@ user function pedidoById(cClient,cLojaCLi,cNumPed)
 			IF alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)
 				oPedido := JsonObject():new()
 				//alert("Entro")
-				oPedido['C5_USRREG']	:=     (cNextAlias)->C5_USRREG
-				oPedido['C5_NUM']		:=     (cNextAlias)->C5_NUM
-				oPedido['C5_CLIENTE']	:=     (cNextAlias)->C5_CLIENTE
-				oPedido['C5_CONDPAG']	:=     (cNextAlias)->C5_CONDPAG
-				oPedido['C5_UTIPOEN']	:=     (cNextAlias)->C5_UTIPOEN // tipo de entrega (nuevo)
-				oPedido['C5_EMISSAO']	:=     (cNextAlias)->C5_EMISSAO
-				oPedido['C5_FILIAL']		:=     (cNextAlias)->C5_FILIAL
-				oPedido['C5_LOJACLI']	:=     (cNextAlias)->C5_LOJACLI
-				oPedido['C5_MOEDA']		:=     (cNextAlias)->C5_MOEDA
-				oPedido['C5_NOTA']		:=     (cNextAlias)->C5_NOTA
-				oPedido['C5_SERIE']		:=     (cNextAlias)->C5_SERIE
-				oPedido['C5_UNITCLI']	:=     (cNextAlias)->C5_UNITCLI
-				oPedido['C5_DOCGER']	:=     (cNextAlias)->C5_DOCGER // agregando documento a generar 14/04/2020
-				oPedido['C5_UOBSERV']	:=     (cNextAlias)->C5_UOBSERV // agregando observación Nahim 04/02/2020
-				oPedido['C5_UNOMCLI']	:=     AllTrim((cNextAlias)->C5_UNOMCLI)
-				oPedido['C5_VEND1']	:=         (cNextAlias)->C5_VEND1
-				oPedido['C5_LOJACLI']	:=     (cNextAlias)->C5_LOJACLI
-				oPedido['A3_NOME']	:=     AllTrim((cNextAlias)->A3_NOME)
-				oPedido['F2_EMISSAO']	:=      ""
+				oPedido['C5_USRREG']	:= (cNextAlias)->C5_USRREG
+				oPedido['C5_NUM']		:= (cNextAlias)->C5_NUM
+				oPedido['C5_CLIENTE']	:= (cNextAlias)->C5_CLIENTE
+				oPedido['C5_CONDPAG']	:= (cNextAlias)->C5_CONDPAG
+				oPedido['C5_UTIPOEN']	:= (cNextAlias)->C5_UTIPOEN // tipo de entrega (nuevo)
+				oPedido['C5_EMISSAO']	:= (cNextAlias)->C5_EMISSAO
+				oPedido['C5_FILIAL']	:= (cNextAlias)->C5_FILIAL
+				oPedido['C5_LOJACLI']	:= (cNextAlias)->C5_LOJACLI
+				oPedido['C5_MOEDA']		:= (cNextAlias)->C5_MOEDA
+				oPedido['C5_NOTA']		:= (cNextAlias)->C5_NOTA
+				oPedido['C5_SERIE']		:= (cNextAlias)->C5_SERIE
+				oPedido['C5_UNITCLI']	:= (cNextAlias)->C5_UNITCLI
+				oPedido['C5_DOCGER']	:= (cNextAlias)->C5_DOCGER // agregando documento a generar 14/04/2020
+				oPedido['C5_UOBSERV']	:= (cNextAlias)->C5_UOBSERV // agregando observaciï¿½n Nahim 04/02/2020
+				oPedido['C5_UNOMCLI']	:= AllTrim((cNextAlias)->C5_UNOMCLI)
+				oPedido['C5_VEND1']		:= (cNextAlias)->C5_VEND1
+				oPedido['C5_LOJACLI']	:= (cNextAlias)->C5_LOJACLI
+				oPedido['A3_NOME']		:= AllTrim((cNextAlias)->A3_NOME)
+				oPedido['F2_EMISSAO']	:=  ""
+
+				//Electronic Invoice
+				oPedido['C5_CODMPAG']	:= ALLTRIM((cNextAlias)->C5_CODMPAG)
+				oPedido['C5_XCLDOCI']	:= ALLTRIM((cNextAlias)->C5_XCLDOCI)
+				oPedido['C5_XTIPDOC']	:= ALLTRIM((cNextAlias)->C5_XTIPDOC)
+				oPedido['C5_XEMAIL']	:= ALLTRIM((cNextAlias)->C5_XEMAIL)
+				oPedido['C5_NUMTARG']	:= ALLTRIM((cNextAlias)->C5_NUMTARG)
+				oPedido['F2_NUMAUT']	:=  ""
 
 				// Nahim Gestionando el color
 				if !empty((cNextAlias)->COLOR) // caso que tenga color
-					if (alltrim((cNextAlias)->C5_COLOR)) == '#ebeb5f' // sólo si es amarillo
+					if (alltrim((cNextAlias)->C5_COLOR)) == '#ebeb5f' // sï¿½lo si es amarillo
 						oPedido['C5_COLOR']   := alltrim((cNextAlias)->COLOR)
 					else
 						oPedido['C5_COLOR']   := alltrim((cNextAlias)->C5_COLOR)
@@ -592,66 +647,67 @@ user function pedidoById(cClient,cLojaCLi,cNumPed)
 			objProducto:setC6_VDOBS( Trim(cObs))
 			*/
 
-			objProducto := JsonObject():new()
-			objProducto['B1_COD']	   := (cNextAlias)->C6_PRODUTO
-			objProducto['B1_DESC'] 	   := (cNextAlias)->B1_DESC
-			objProducto['B1_PRV1']     := (cNextAlias)->C6_PRUNIT
-			objProducto['B1_UM']      := (cNextAlias)->C6_UM
+	objProducto := JsonObject():new()
+	objProducto['B1_COD']	   := (cNextAlias)->C6_PRODUTO
+	objProducto['B1_DESC'] 	   := (cNextAlias)->B1_DESC
+	objProducto['B1_PRV1']     := (cNextAlias)->C6_PRUNIT
+	objProducto['B1_UM']      := (cNextAlias)->C6_UM
 
-			objProducto['C6_PRCVEN']     := (cNextAlias)->C6_PRCVEN // FINAL 02/04/2020
-			objProducto['C6_DESCONT']  := (cNextAlias)->C6_VALDESC // Nahim cambiando por valdes 02/04/2020
-			//			objProducto['C6_DESCONT']  := (cNextAlias)->C6_DESCONT
-			objProducto['C6_FILIAL']   := (cNextAlias)->C6_FILIAL
-			objProducto['C6_ITEM']     := (cNextAlias)->C6_ITEM
-			objProducto['C6_LOCAL']    := (cNextAlias)->C6_LOCAL
-			objProducto['C6_QTDVEN']   := (cNextAlias)->C6_QTDVEN
-			objProducto['C6_TES']   := (cNextAlias)->C6_TES
-			objProducto['C6_UTPLIQ']	:= (cNextAlias)->C6_UTPLIQ// descuento justificación Nahim 07/06/2020
-			objProducto['PEDVEN']   := alltrim((cNextAlias)->C5_NUM)
-			AADD(aProds,objProducto)
+	objProducto['C6_PRCVEN']     := (cNextAlias)->C6_PRCVEN // FINAL 02/04/2020
+	objProducto['C6_PRCONTA']    := (cNextAlias)->C6_PRCONTA
+	objProducto['C6_DESCONT']  := (cNextAlias)->C6_VALDESC // Nahim cambiando por valdes 02/04/2020
+	//			objProducto['C6_DESCONT']  := (cNextAlias)->C6_DESCONT
+	objProducto['C6_FILIAL']   := (cNextAlias)->C6_FILIAL
+	objProducto['C6_ITEM']     := (cNextAlias)->C6_ITEM
+	objProducto['C6_LOCAL']    := (cNextAlias)->C6_LOCAL
+	objProducto['C6_QTDVEN']   := (cNextAlias)->C6_QTDVEN
+	objProducto['C6_TES']   := (cNextAlias)->C6_TES
+	objProducto['C6_UTPLIQ']	:= (cNextAlias)->C6_UTPLIQ// descuento justificaciï¿½n Nahim 07/06/2020
+	objProducto['PEDVEN']   := alltrim((cNextAlias)->C5_NUM)
+	AADD(aProds,objProducto)
 
-			//oPedido:SetProd(objProducto)
+	//oPedido:SetProd(objProducto)
 
-			(cNextAlias)->( DbSkip() )
-			IF (alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)) .or. (cNextAlias)->(Eof()) // caso esté cambiando de pedido vamos a v
-				oPedido['APROD'] := aProds
-				aProds := {}
-				aadd(aPedidos,oPedido)
-			ENDIF
-		EndDo
+	(cNextAlias)->( DbSkip() )
+	IF (alltrim(oPedido['C5_NUM']) != alltrim((cNextAlias)->C5_NUM)) .or. (cNextAlias)->(Eof()) // caso estï¿½ cambiando de pedido vamos a v
+		oPedido['APROD'] := aProds
+		aProds := {}
+		aadd(aPedidos,oPedido)
+	ENDIF
+EndDo
 
-		//		for i := 1 to len(aProds)
-		//
-		//			cProdPed := aProds[i]:getCodPed()
-		//			cProdFil := aProds[i]:getC6_FILIAL()
-		//
-		//			for j := 1 to len(aPedidos)
-		//
-		//				if aPedidos[j]:getNum() == cProdPed .and. aPedidos[j]:getFilial() == cProdFil
-		//					aPedidos[j]:SetProd(aProds[i])
-		//				endif
-		//			next
-		//
-		//		next
+//		for i := 1 to len(aProds)
+//
+//			cProdPed := aProds[i]:getCodPed()
+//			cProdFil := aProds[i]:getC6_FILIAL()
+//
+//			for j := 1 to len(aPedidos)
+//
+//				if aPedidos[j]:getNum() == cProdPed .and. aPedidos[j]:getFilial() == cProdFil
+//					aPedidos[j]:SetProd(aProds[i])
+//				endif
+//			next
+//
+//		next
 
-		cResponse:= '{'
-		cResponse+= '"status" : "success",'
-		cResponse+= '"data" : '
-		cJson := FWJsonSerialize(aPedidos,.T.,.T.)
-		cResponse+= cJson
-		cResponse+= '}'
+cResponse:= '{'
+cResponse+= '"status" : "success",'
+cResponse+= '"data" : '
+cJson := FWJsonSerialize(aPedidos,.T.,.T.)
+cResponse+= cJson
+cResponse+= '}'
 
-		cJson := EncodeUtf8(cResponse)
+cJson := EncodeUtf8(cResponse)
 
-	Else
-		cResponse:= '{'
-		cResponse+= '"status" : "fail",'
-		cResponse+= '"message" : "Buscando pedido ' + cNumPed + '"'
-		cResponse+= '}'
+Else
+	cResponse:= '{'
+	cResponse+= '"status" : "fail",'
+	cResponse+= '"message" : "Buscando pedido ' + cNumPed + '"'
+	cResponse+= '}'
 
-		cJson := EncodeUtf8(cResponse)
-	EndIf
-	RestArea(aArea)
+	cJson := EncodeUtf8(cResponse)
+EndIf
+RestArea(aArea)
 Return(cJson)
 
 Static Function bscCodVen(cCodUsr) // trae codigo de vendedor
